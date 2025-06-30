@@ -1,0 +1,124 @@
+.main-nav {
+  flex: 2;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cart-wrapper {
+  flex: 1;
+  text-align: right;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.cart-wrapper img {
+  width: 24px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.main-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.header-banner {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.header-inner {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo-container img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  padding-left: 5%;
+}
+
+.site-header {
+  font-family: var(--font-header);
+}
+.header-banner {
+  background-color: var(--header-primary-color);
+  color: #ffffff;
+  font-size: var(--font-size-base);
+}
+.main-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-family: var(--font-header);
+  font-size: var(--font-size-base);
+  color: var(--header-primary-color);
+}
+
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16px;
+  height: 14px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.hamburger-button span {
+  height: 2px;
+  background: #000;
+  border-radius: 2px;
+  display: block;
+}
+
+#cart-count-badge {
+  position: absolute;
+  top: -3px;
+  right: 2px;
+  background-color: var(--header-decals-color);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 3px 3px;
+  text-align: center;
+  line-height: 100%;
+  display: none; 
+  min-width: 10px;
+}
+
+#mobile-nav {
+  display: none;
+}

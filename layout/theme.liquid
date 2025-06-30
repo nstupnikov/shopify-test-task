@@ -7,17 +7,23 @@
 
     {{ content_for_header }} 
 
-    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'header.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'responsive.css' | asset_url }}">
+
   </head>
 
   <body>
-
-    {% section 'header' %}
-
     <main>
       {{ content_for_layout }}
     </main>
 
+    <script src="{{ 'site.js' | asset_url }}" defer></script>
     <script src="{{ 'gallery.js' | asset_url }}" defer></script>
+    <script src="{{ 'scroll-gallery.js' | asset_url }}" defer></script>
+    <script src="{{ 'cart.js' | asset_url }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
   </body>
 </html>

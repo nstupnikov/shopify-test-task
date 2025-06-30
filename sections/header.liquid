@@ -1,20 +1,66 @@
 <header class="site-header">
-  <div class="wrapper">
-      <h1>
+  <div class="header-banner">
+    {{ section.settings.header_banner_text }}
+  </div>
+  <div class="header-inner">
+    <div class="logo-container">
+      <a href="#">
         <img 
           class="logo"
           src="{{ 'logo-neoric_10c0843e-64e6-440c-93d1-9e96932fad90_360x.png' | asset_url }}"
           width="360"
           height="120"
         >
-      </h1>
+      </a>  
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Neon Armband™</a></li>
+        <li><a href="#">Größentabelle</a></li>
+        <li><a href="#">Versand</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="cart-wrapper">
+      <a href="#">
+        <img
+          class="cart-icon"
+          src="{{ 'bag-icon.png' | asset_url }}"
+          width="500"
+          height="500"
+        >
+        <span id="cart-count-badge"></span>
+      </a>
+    </div>
+    <button class="hamburger-button" id="hamburger-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div id="mobile-nav">
+    <nav class="mobile-nav-list">
+      <ul>
+        <li><a href="#">Neon Armband™</a></li>
+        <li><a href="#">Größentabelle</a></li>
+        <li><a href="#">Versand</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
 {% schema %}
 {
   "name": "Header",
-  "settings": []
+  "settings": [
+    {
+      "type": "text",
+      "id": "header_banner_text",
+      "label": "Header banner text",
+      "default": "HEUTE VERSANDKOSTENFREI"
+    }
+  ]
 }
 {% endschema %}
 

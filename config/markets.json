@@ -8,18 +8,5 @@
  * ------------------------------------------------------------
  */
 {
- "sections": {
-    "header": {
-      "type": "header",
-      "settings": {}
-    },
-    "layout": {
-      "type": "product-layout",
-      "settings": {}
-    }
-  },
-  "order": [
-    "header",
-    "layout"
-  ]
+  "markets": {}
 }

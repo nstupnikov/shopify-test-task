@@ -1,0 +1,24 @@
+:root {
+  --primary-color: {{ settings.primary_color | default: '#1e40ff' }};
+  --header-primary-color: {{ settings.primary_color | default: '#5f5f5f' }};
+  --primary-color-hover: {{ settings.primary_color_hover | default: '#1535d1' }};
+  --text-color: {{ settings.text_color | default: '#5f5f5f' }};
+  --text-muted: {{ settings.text_muted | default: '#646464' }};
+  --success-color: {{ settings.success_color | default: '#25A525' }};
+  --font-body: {{ settings.body_font.family | default: 'Montserrat' }}, sans-serif;
+  --font-header: {{ settings.header_font.family | default: 'Open Sans' }}, sans-serif;
+  --font-size-base: {{ settings.base_font_size | default: 16 }}px;
+  --font-size-heading: {{ settings.heading_font_size | default: 28 }}px;
+  --font-size-small: {{ settings.small_font_size | default: 12 }}px;
+  --badge-color: {{ settings.badge_color | default: '#1F47FF' }};
+  --header-decals-color: {{ settings.header_decals_color | default: '#5271ff' }};
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+}
+
+

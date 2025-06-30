@@ -1,0 +1,22 @@
+<section id="product-benefits">
+<div class="product-benefits">
+      {% for i in (1..3) %}
+      <div class="benefit-item">
+        <img 
+          class="benefit-icon"
+          src="{{ 'certified-icon.png' | asset_url }}"
+          width="57"
+          height="57"
+        >
+        <div class="benefits-text">
+          <div class="benefit-headline">
+            100% Qualität
+          </div>
+          <div class="benefit-color benefit-text">
+            Dank weichem Silikon
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+</section>
